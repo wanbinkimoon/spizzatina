@@ -20,10 +20,20 @@
 		
 		<div id="container">
 			<h1>Detecting faces in the scope below</h1>
-			<video class="scope" id="1" autoplay="true"></video>
-			<div id="errorMsg"></div>
+			<div class="wrap">
+      	<video id="video" width="640" height="480" preload autoplay loop muted></video>
+      	<canvas id="canvas" width="640" height="480"></canvas>
+				
+			</div>
+ 			<!-- <div id="errorMsg"></div> -->
 			<hr/>
 		</div>
-	<script src="main.js" async defer></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tracking.js/1.1.3/tracking-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tracking.js/1.1.3/data/face-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tracking.js/1.1.3/data/eye-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tracking.js/1.1.3/data/mouth-min.js"></script>
+	<!-- <script src="cam.js"></script> -->
+	<script src="track.js"></script>
 </body>
 </html>
